@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<form method="post" action="success">
+    <input type="text" th:name="${_csrf.getParameterName()}" th:value="${_csrf.token}" hidden>
+    <input type="text">
+    <input type="submit">
+</form>
+</body>
+</html>
